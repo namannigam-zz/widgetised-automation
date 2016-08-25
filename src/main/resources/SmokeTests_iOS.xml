@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTests_iOS" verbose="1" >
+    <listeners>
+        <listener class-name="mobile.listener.TestListener" />
+    </listeners>
+
+    <test name="SignupSanity">
+        <classes>
+            <class name="mobile.tests.iOS.SignupPageTest_iOS" />
+        </classes>
+    </test>
+    <test name="LoginSanity">
+        <classes>
+            <class name="mobile.tests.iOS.LoginPageTest_iOS" />
+        </classes>
+    </test>
+    <test name="HomePageSanity">
+        <classes>
+            <class name="mobile.tests.iOS.HomePageTest_iOS" />
+        </classes>
+    </test>
+    <test name="SearchPageSanity">
+        <classes>
+            <class name="mobile.tests.iOS.SearchPageTest_iOS" />
+        </classes>
+    </test>
+    <test name="BrowsePageSanity">
+        <classes>
+            <class name="mobile.tests.iOS.BrowsePageTest_iOS" />
+        </classes>
+    </test>
+</suite>

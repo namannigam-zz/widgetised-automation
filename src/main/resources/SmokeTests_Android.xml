@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTests" verbose="1" >
+    <listeners>
+        <listener class-name="mobile.listener.TestListener" />
+    </listeners>
+
+    <test name="loginSanity">
+        <classes>
+            <class name="mobile.tests.android.LoginPageTest" />
+        </classes>
+    </test>
+    <test name="pingSanity">
+        <classes>
+            <class name ="mobile.tests.android.PingTest"/>
+        </classes>
+    </test>
+    <test name="homePageSanity">
+        <classes>
+            <class name ="mobile.tests.android.HomePageTest"/>
+        </classes>
+    </test>
+    <test name="searchPageSanity">
+        <classes>
+            <class name ="mobile.tests.android.SearchPageTest"/>
+        </classes>
+    </test>
+    <test name="browsePageSanity">
+        <classes>
+            <class name ="mobile.tests.android.BrowsePageTest"/>
+        </classes>
+    </test>
+    <test name="notificationSanity">
+        <classes>
+            <class name ="mobile.tests.android.NotificationTest"/>
+        </classes>
+    </test>
+    <test name="wishlistSanity">
+        <classes>
+            <class name ="mobile.tests.android.WishlistTest"/>
+        </classes>
+    </test>
+    <test name="cartSanity">
+        <classes>
+            <class name ="mobile.tests.android.CartTest"/>
+        </classes>
+    </test>
+    <test name="checkoutSanity">
+        <classes>
+            <class name ="mobile.tests.android.CheckOutTest"/>
+        </classes>
+    </test>
+    <test name="profilePageSanity">
+        <classes>
+            <class name ="mobile.tests.android.ProfilePageTest"/>
+        </classes>
+    </test>
+</suite>
